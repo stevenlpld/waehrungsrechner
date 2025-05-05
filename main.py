@@ -32,43 +32,31 @@ def begruessung(name):
 
 def verdopple_euro(betrag):
      return betrag * 2
-
+  
 if __name__ == "__main__":
-      
-# Menü anzeigen
-    while True:
-        print("\n--- Willkommen beim Währungsrechner! ---")
-        print("1: EUR -> UDS")
-        print("2: USD -> EUR")
-        print("3: Begrüßung anzeigen")
-        print("4: Euro-Betrag verdoppeln")
-        print("q: Beenden")
+     
+     while True:
+        print(f"Willkommen bei deiner SAP-Bewerbungshilfe!")
+        print("1:Was ist SAP BTP?")
+        print("2:Was macht ein Software Engineer?")
+        print("3:Was sind deine Stärken?")
+        print("4:Beenden")
 
-        wahl = input("Bitte Option wählen: ")
-
-        if wahl == "1":
-            eingabe = input("Betrag in EUR: ")
-            euro = float(eingabe)
-            usd = eur_to_usd(euro)
-            print(f"{euro:.2f} EUR sind {usd:.2f} USD.")
-        elif wahl == "2":
-            eingabe = input("Betrag in USD: ")
-            usd = float(eingabe)
-            euro = usd_to_eur (usd)
-            print(f"{usd:.2f} USD sind {euro:.2f} EUR. ")
-        elif wahl == "3":
-            name = input("Wie heißt du?")
-            begruessung(name)
-            
-        elif wahl == "4":
-            eingabe = input("Betrag in EUR: ")
-            euro = float(eingabe)
-            doppelter_betrag = verdopple_euro(euro)
-            print(f"{euro:.2f} EUR verdoppelt sind {doppelter_betrag:.2f} EUR.")
-        elif wahl.lower() == "q":
-            print("Programm wird beendet. Auf Wiedersehen!")
-            break
+        wahl = input("Bitte Option wählen:")
         
+        if wahl == "1":
+             eingabe = input("Was ist SAP BTP?")
+             print("Die SAP Business Technology Platform (BTP) ist eine Cloud-Plattform für Daten, Integration, KI und Anwendungsentwicklung.")
+        elif wahl == "2":
+             eingabe = input("Was macht ein Software Engineer?")
+             print("Er entwickelt Software, höhöhö!")
+        elif wahl == "3":
+            eingabe = input("Was sind deine Stärken?")
+            print("Gaming, Fußball und Leute nerven")
+        elif wahl == "4":
+            print("Programm wird beendet.")
+            break
+
         else:
-            print("Ungültige Auswahl - bitte 1, 2, 3, 4 oder q eingeben.")
+             print("Ungültige Auswahl!")
 
